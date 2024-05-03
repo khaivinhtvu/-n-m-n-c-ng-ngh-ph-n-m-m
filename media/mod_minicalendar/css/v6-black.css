@@ -1,0 +1,52 @@
+.mod_minical_inner {
+    display:inline-block;
+    vertical-align:top;
+    border:3px solid black;
+    border-radius:6px;    
+}
+.mod_minical_inner.full-width {width:calc(100% - 6px)}
+.mod_minical_table {
+    margin:0;
+    border-collapse:collapse;
+    border:2px solid #4c4c4c;
+    color:whitesmoke;
+    background-color:#4c4c4c;
+    text-align:center;
+    line-height:1.4;
+    width:auto;
+    font-family:Arial,sans-serif;
+    font-size:1rem;
+}
+.mod_minical_table.full-width {width:100%}
+.mod_minical_table th {
+    border:1px solid black;
+    color:whitesmoke;
+    font-weight:normal;
+    padding:3px 0;
+    min-width:25px;
+    background-color:#292929;
+    background-image:none;
+    text-align:center;
+}
+
+.mod_minical_table tr td {pointer-events:none}  /* fix for Beez */        
+
+.mod_minical_table tr.mod_minical_day th {color:whitesmoke}
+
+.mod_minical_table tr.mod_minical_month th {border-left:none;border-right:none;background-color:#82897c}
+
+.mod_minical_table td {border:1px solid black;padding:3px 0;text-align:center;background-color:#4c4c4c;}
+
+.mod_minical_table td.mod_minical_today {background-color:#82887c}
+
+.mod_minical_table td.mod_minical_nonday {background-color:#292929}
+
+.mod_minical_weekno {color:red}
+
+.mod_minical_table th.mod_minical_left {cursor:pointer}
+span.mod_minical_left {display:inline-block;height:0;width:0;vertical-align:middle;margin-right:6px;border:9px solid transparent;border-right-color:whitesmoke}
+span.mod_minical_left:hover {border-right-color:orange}
+
+.mod_minical_table th.mod_minical_right {cursor:pointer}
+span.mod_minical_right {display:inline-block;height:0;width:0;vertical-align:middle;margin-left:6px;border:9px solid transparent;border-left-color:whitesmoke}
+span.mod_minical_right:hover {border-left-color:orange}

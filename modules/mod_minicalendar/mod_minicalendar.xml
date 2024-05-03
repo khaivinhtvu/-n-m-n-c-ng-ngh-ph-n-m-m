@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.7.0" client="site" method="upgrade">
+
+<name>MiniCalendar</name>
+<creationDate>7 March 2023</creationDate>
+<author>Les Arbres Design</author>
+<copyright>Les Arbres Design 2010-2023</copyright>
+<license>GPL</license>
+<authorUrl>https://www.lesarbresdesign.info</authorUrl>
+<version>6.00</version>
+<description>MiniCalendar</description>
+
+<scriptfile>install.php</scriptfile>
+
+<files>
+	<filename module="mod_minicalendar">mod_minicalendar.php</filename>
+	<filename>helper.php</filename>
+	<filename>index.html</filename>
+	<folder>language</folder>
+</files>
+
+<media folder="media" destination="mod_minicalendar">
+	<folder>css</folder>
+	<folder>images</folder>
+	<folder>js</folder>
+</media>
+
+<config>
+<fields name="params">
+<fieldset name="basic">
+    <field name="cssfile" type="filelist" label="MOD_MINICALENDAR_L_CSS" directory="media/mod_minicalendar/css"
+        default="v6-grey.css" hide_default="true" hide_none="true" filter="v6.*\.css" />
+    
+	<field name="fullwidth" type="list" class="btn-group btn-group-yesno" default="1" label="MOD_MINICALENDAR_L_FULL_WIDTH" description="MOD_MINICALENDAR_D_FULL_WIDTH">
+		<option value="0">JNO</option>
+		<option value="1">JYES</option>
+	</field>
+
+	<field name="links" type="list" class="btn-group btn-group-yesno" default="1" label="MOD_MINICALENDAR_L_LINKS" description="MOD_MINICALENDAR_D_LINKS">
+		<option value="0">JNO</option>
+		<option value="1">JYES</option>
+	</field>
+
+	<field name="startyear" type="text" label="MOD_MINICALENDAR_L_DEFAULT_YEAR" description="MOD_MINICALENDAR_D_DEFAULT_YEAR" />
+	
+	<field name="startmonth" type="number" default="0" min="-12" max="12" label="MOD_MINICALENDAR_L_DEFAULT_MONTH" description="MOD_MINICALENDAR_D_DEFAULT_MONTH" />
+	
+	<field name="numMonths" type="number" default="1" min="1" max="99" label="MOD_MINICALENDAR_L_NUM_MONTHS" description="MOD_MINICALENDAR_D_NUM_MONTHS" />
+    
+	<field name="firstDay" type="list" default="0" label="MOD_MINICALENDAR_L_FIRST_DAY" description="MOD_MINICALENDAR_D_FIRST_DAY">
+		<option value="0">SUNDAY</option>
+		<option value="1">MONDAY</option>
+		<option value="2">TUESDAY</option>
+		<option value="3">WEDNESDAY</option>
+		<option value="4">THURSDAY</option>
+		<option value="5">FRIDAY</option>
+		<option value="6">SATURDAY</option>
+	</field>
+		
+	<field name="dayLength" type="number" default="1" min="0" max="20" label="MOD_MINICALENDAR_L_DAY_LENGTH" description="MOD_MINICALENDAR_D_DAY_LENGTH" />
+	
+	<field name="weekHdr" type="text" label="MOD_MINICALENDAR_L_WEEK_HEADING" description="MOD_MINICALENDAR_D_WEEK_HEADING" />
+	
+	<field name="timeZone" type="list" default="0" label="MOD_MINICALENDAR_L_TIME_ZONE" description="MOD_MINICALENDAR_D_TIME_ZONE">
+		<option value="0">MOD_MINICALENDAR_SERVER_TIME</option>
+		<option value="Pacific/Samoa">UTC -11:00</option>
+		<option value="US/Hawaii">UTC -10:00</option>
+		<option value="US/Alaska">UTC -09:00</option>
+		<option value="America/Vancouver">UTC -08:00</option>
+		<option value="America/Denver">UTC -07:00</option>
+		<option value="America/Regina">UTC -06:00</option>
+		<option value="America/Detroit">UTC -05:00</option>
+		<option value="America/Halifax">UTC -04:00</option>
+		<option value="America/Argentina/Buenos_Aires">UTC -03:00</option>
+		<option value="America/Noronha">UTC -02:00</option>
+		<option value="Atlantic/Azores">UTC -01:00</option>
+		<option value="UTC">UTC 00:00</option>
+		<option value="Europe/Amsterdam">UTC +01:00</option>
+		<option value="Africa/Cairo">UTC +02:00</option>
+		<option value="Asia/Kuwait">UTC +03:00</option>
+		<option value="Asia/Baku">UTC +04:00</option>
+		<option value="Asia/Karachi">UTC +05:00</option>
+		<option value="Asia/Dhaka">UTC +06:00</option>
+		<option value="Asia/Bangkok">UTC +07:00</option>
+		<option value="Asia/Shanghai">UTC +08:00</option>
+		<option value="Asia/Seoul">UTC +09:00</option>
+		<option value="Australia/Sydney">UTC +10:00</option>
+		<option value="Asia/Magadan">UTC +11:00</option>
+		<option value="Pacific/Fiji">UTC +12:00</option>
+	</field>
+
+	<field name="debug" type="list" class="btn-group btn-group-yesno" default="0" label="Debug" description="Creates a trace.txt file to send to support">
+		<option value="0">JNO</option>
+		<option value="1">JYES</option>
+	</field>
+
+</fieldset>
+</fields>
+</config>
+
+<updateservers>
+    <server type="extension" priority="2" name="MiniCalendar"><![CDATA[https://www.lesarbresdesign.info/jupdate?product=minicalendar]]></server>
+</updateservers>
+
+</extension>

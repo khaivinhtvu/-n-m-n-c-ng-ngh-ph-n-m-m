@@ -1,0 +1,53 @@
+.mod_minical_inner {
+    display:inline-block;
+    vertical-align:top;
+    border:3px solid lightgray;
+    border-radius:6px;    
+}
+.mod_minical_inner.full-width {width:calc(100% - 6px)}
+.mod_minical_table {
+    margin:0;
+    border-collapse:collapse;
+    border:none;
+    columns:#333333;;
+    background-color:rgba(255,255,0,1);
+    background:linear-gradient(110deg, #f7ee93 0%,#fefde2 32%,#fff6a2 75%,#f7ee93 100%);
+    text-align:center;
+    line-height:1.4;
+    width:auto;
+    font-family:Arial,sans-serif;
+    font-size:1rem;
+}
+.mod_minical_table.full-width {width:100%}
+.mod_minical_table th {
+    border:none;
+    font-weight:normal;
+    padding:3px 0;
+    min-width:25px;
+    background-image:none;
+    background-color:inherit;
+    text-align:center;
+    color:#882100;
+}
+
+.mod_minical_table tr td {pointer-events:none}  /* fix for Beez */        
+
+.mod_minical_table tr.mod_minical_day th {background:transparent;border:1px solid #f5e23b;color:#ff9800}
+
+.mod_minical_table tr.mod_minical_month th {border-left:none;border-right:none}
+
+.mod_minical_table td {border:none;padding:3px 0;text-align:center;background:transparent;border:1px solid #f5e23b}
+
+.mod_minical_table td.mod_minical_today {background-color:white}
+
+.mod_minical_table td.mod_minical_nonday {background-color:transparent}
+
+.mod_minical_weekno {color:#ff9800}
+
+.mod_minical_table th.mod_minical_left {cursor:pointer}
+span.mod_minical_left {display:inline-block;height:0;width:0;vertical-align:middle;margin-right:6px;border:9px solid transparent;border-right-color:#9e9e9e}
+span.mod_minical_left:hover {border-right-color:white}
+
+.mod_minical_table th.mod_minical_right {cursor:pointer}
+span.mod_minical_right {display:inline-block;height:0;width:0;vertical-align:middle;margin-left:6px;border:9px solid transparent;border-left-color:#9e9e9e}
+span.mod_minical_right:hover {border-left-color:white}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" client="site" type="template" method="upgrade">
+    <name>dd_studio_33</name>
+    <creationDate>2013-12-11</creationDate>
+    <version>2.0</version>
+    <author>www.diablodesign.eu</author>
+    <authorUrl>http://www.diablodesign.eu</authorUrl>
+  	<description>
+	  <![CDATA[
+	<div class="dd-description clearfix">
+	<h2><span style="color: #39F;"> DD Studio 33 - Diablo Design free Joomla template</span></h2>
+	<hr>
+	For more free templates, visit.
+	<br>
+	<a href="https://diablodesign.eu" target="_blank">https://diablodesign.eu</a>
+	<br>
+	<a href="https://templatki.com" target="_blank">https://templatki.com</a>
+	<hr><br><br>
+	</div>
+	]]>
+	</description>
+
+    <files>
+        <folder>css</folder>
+        <folder>html</folder>
+		<folder>fonts</folder>
+		<folder>js</folder>
+		<folder>inc</folder>
+		<folder>pie</folder>
+        <folder>images</folder>
+        <folder>language</folder>
+        <folder>library</folder>
+        <file>component.php</file>
+        <file>favicon.ico</file>
+        <file>functions.php</file>
+        <file>index.html</file>
+        <file>index.php</file>
+        <file>jquery.js</file>
+        <file>modules.js</file>
+        <file>script.js</file>
+        <file>script.responsive.js</file>
+        <file>templateDetails.xml</file>
+        <file>template_thumbnail.png</file>
+    </files>
+    <positions>
+        <position>debug</position>
+        <position>position-1</position>
+        <position>position-2</position>
+        <position>position-4</position>
+        <position>position-5</position>
+        <position>position-7</position>
+        <position>position-9</position>
+        <position>position-10</position>
+        <position>position-11</position>
+        <position>position-12</position>
+        <position>position-15</position>
+        <position>position-16</position>
+        <position>position-17</position>
+        <position>position-18</position>
+        <position>position-19</position>
+        <position>position-20</position>
+        <position>position-21</position>
+        <position>position-22</position>
+        <position>position-23</position>
+        <position>position-24</position>
+        <position>position-25</position>
+        <position>position-26</position>
+        <position>position-27</position>
+        <position>position-28</position>
+        <position>position-29</position>
+        <position>position-30</position>
+        <position>position-31</position>
+    </positions>
+    <config>
+        <fields name="params">
+		   
+          <!--logo-->
+			 <fieldset name="logo" label="Logo "><field name="logo" type="media" label="Select image " description="Logo" default="templates/dd_studio_33/images/logo.png"/>
+				</fieldset>
+	
+	<!--animcja-->
+				<fieldset name="animacja" label="Slideshow">
+					<field type="spacer" class="text" label="&lt;b style='color:red;'&gt;Rozmiar fotografi musi wynosić 950px na 3340px !&lt;/b&gt;&lt;/a&gt;" />
+					<field type="spacer" class="text" label="&lt;b style='color:green;'&gt;Size photo must be 950px to 340px! !&lt;/b&gt;&lt;/a&gt;" />
+			<field name="foto1" type="media" label="Upload foto 1" description="" default="templates/dd_studio_33/images/slideshow/1.jpg"/>
+			<field name="foto2" type="media" label="Upload foto 2" description="" default="templates/dd_studio_33/images/slideshow/2.jpg"/>
+			<field name="foto3" type="media" label="Upload foto 3" description="" default="templates/dd_studio_33/images/slideshow/3.jpg"/>
+			<field name="foto4" type="media" label="Upload foto 4" description="" default="templates/dd_studio_33/images/slideshow/4.jpg"/>
+			<field name="foto5" type="media" label="Upload foto 5" description="" default="templates/dd_studio_33/images/slideshow/5.jpg"/>
+			</fieldset>
+			<!--animcja-->
+				<fieldset name="autor" label=" Photo Author">
+					<field type="spacer" class="text" label="&lt;b style='color:red;'&gt;Rozmiar fotografi musi wynosić 190px na 190px !&lt;/b&gt;&lt;/a&gt;" />
+					<field type="spacer" class="text" label="&lt;b style='color:green;'&gt;Size photo must be 190px to 190px! !&lt;/b&gt;&lt;/a&gt;" />
+			<field name="author" type="media" label="Upload foto 1" description="" default="templates/dd_studio_33/images/author.jpg"/>
+			</fieldset>
+			<!--social-->
+			<fieldset name="social" label="Social icons">	
+			
+			<field name="fb" type="text" default="http://" label="Facebok url:" description="facebok link" filter="string" />
+			<field name="fbt" type="text" default="Become a fan on Facebook" label="Facebok text:" description="facebok text" filter="string" />
+			<field name="fbc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+			<field name="tw" type="text" default="http://" label="Twitter url:" description="twitter link" filter="string" />
+			<field name="twt" type="text" default="Follow us on Twitter" label="Twitter text:" description="twitter text" filter="string" />
+				<field name="twc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+		
+			<field name="fl" type="text" default="http://" label="Flickr url:" description="flickr link" filter="string" />
+			<field name="flt" type="text" default="Add us on Flickr" label="Flickr text:" description="flickr text" filter="string" />
+				<field name="flc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+			<field name="rs" type="text" default="http://" label="Rss url:" description="Rss link" filter="string" />
+			<field name="rst" type="text" default="Follow our updates through RSS" label="Rss text:" description="Rss text" filter="string" />
+				<field name="rsc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+			<field name="em" type="text" default="mailto:" label="email url:" description="email link" filter="string" />
+			<field name="emt" type="text" default="Subscribe to our newsletter" label="email text:" description="email text" filter="string" />
+				<field name="emc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+		<field type="spacer" class="text" label="&lt;b style='color:red;'&gt;Disabled all share icon! / WYLACZ WSZYTKIE IKONY SPOLECZNOSCIOWE !&lt;/b&gt;&lt;/a&gt;" />
+			<field name="allicon" type="radio" default="1" class="btn-group" label="" description="test">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+			</fieldset>
+				<!--footer-->
+						<fieldset name="footer" label="Footer">       
+                       <field name="footer" type="text" default="Studio Gabrielle" size="50" label="Site name" description="footer site name"/>
+					   </fieldset>
+					   
+
+        </fields>
+    </config>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_dd_studio_33.ini</language>
+    </languages>
+</extension>
